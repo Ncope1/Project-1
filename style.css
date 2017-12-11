@@ -1,4 +1,8 @@
 body {
-    background-color: deeppink;
-    color: dimgray;
+    background-color: lemonchiffon;
+    color: deeppink;
+}
+
+ul {
+    list-style-type: none;
 }
