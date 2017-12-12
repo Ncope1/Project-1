@@ -1,0 +1,11 @@
+body{
+    background-color: lemonchiffon;
+}
+
+.grid{
+    background-color: deeppink;
+    width: 600px;
+    margin: 0 auto;
+    height: 500px;
+    
+}
