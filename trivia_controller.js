@@ -9,14 +9,14 @@ Trivia.prototype.getQuestionIndex = function () {
 }
 
 Trivia.prototype.hasEnded = function () {
-    return this.question.length === this.questionIndex
+    return this.questions.length === this.questionIndex
 }
 
 Trivia.prototype.guess = function (answer) {
     this.questionIndex++
 
-    if(this.getQuestionIndex().correctAnswer(answer)) {
+    if (this.getQuestionIndex().correctAnswer(answer)) {
         this.score++
-        
+
     }
 }
