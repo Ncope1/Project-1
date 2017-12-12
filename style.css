@@ -1,6 +1,7 @@
 body {
     background-color: lemonchiffon;
     color: deeppink;
+    text-align: center;
 }
 
 ul {
@@ -18,3 +19,6 @@ button{
     border-color: lemonchiffon;
     color: lemonchiffon;
 }
+
+/* make questions and answers render at the center of the page
+
