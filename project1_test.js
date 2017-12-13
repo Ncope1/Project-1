@@ -1,24 +1,25 @@
 function populate () {
     if (trivia.hasEnded()) {
-        //showScores ();
+        showScores ()
     }
     else {
         //display question
-        var paragraph = document.getElementById("question")
-       paragraph.innerHTML = trivia.getQuestionIndex().text
+        var element = document.getElementById("question")
+       element.innerHTML = trivia.getQuestionIndex().text
 
        //display options
-       var options = trivia.getQuestionIndex().options
+       var options = trivia.getQuestionIndex().option
        for(var i = 0; i< options.length; i++) {
            var span = document.getElementById("option" + i)
-           span.innerHTML = options[i];
+           span.innerHTML = options[i]
        }
 
     }
-};
+}
 
 function showScores () {
-
+    var gameOverHtml = "<h1>Result</h1>"
+        gameOverHtml += ""
 }
 
 
@@ -29,8 +30,8 @@ var questions = [
     new Question("What are the names of Beyoncé's parents?", ["Matthew and Tina Knowles", "Martin and Gina Knowles", "Solange and Jeffery Knowles", "Tina and Richard Lawson"], "Matthew and Tina Knowles"),
     new Question("How many children does Beyoncé have?", ["One", "Two", "Three", "Four"], "Three"),
     new Question("What group is Beyoncé associated with?", ["TLC", "SWV", "TOTAL", "Destiny's Child"], "Destiny's Child")
-];
+]
 
 var trivia = new Trivia (questions)
 
-populate();
+populate()
