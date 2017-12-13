@@ -14,7 +14,7 @@ function populate () {
            span.innerHTML = options[i]
            guess("btn" + i, options[i])
        }
-        showProgress()
+        //showProgress()
     }
 }
 
@@ -26,15 +26,15 @@ function guess (id, guess) {
     }
 }
 
-//function showProgress () {
-   // var currentQuestionNumber = trivia.getQuestionIndex + 1
-    //var element = document.getElementById("progress")
-    //element.innerHTML = "Question " + currentQuestionNumber + "of " + trivia.questions.length
-//}
+/*function showProgress () {
+   var currentQuestionNumber = trivia.getQuestionIndex + 1
+    var element = document.getElementById("progress")
+    element.innerHTML = "Question " + currentQuestionNumber + "of " + trivia.questions.length
+}*/
 
 function showScores () {
     var gameOverHtml = "<h1>Game Over!</h1>"
-    gameOverHtml += "<h2 id='score'> Your scores: " + trivia.score + "</h2>"
+    gameOverHtml += "<h2 id='score'> Your score: " + trivia.score + "</h2>"
     var element = document.getElementById("trivia")
     element.innerHTML = gameOverHtml
 }
