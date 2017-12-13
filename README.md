@@ -4,7 +4,7 @@ This project is a trivia based on Pop Artist, Beyoncé and her personal/professi
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+<!-- These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -63,22 +63,13 @@ Add additional notes about how to deploy this on a live system
 * Vanilla JavaScript
 
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
-* **Natalee Cope** - *Initial work* - [Project-1](https://github.com/PurpleBooth)
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* **Natalee Cope** - *Project-1* - [Queen Bey Trivia](https://github.com/Ncope1/Project-1)
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* HUGE shout out to all of my WDI-20 peers for your help in figuring out my errors
+* S/O to FTSProtocol
 
+ -->
