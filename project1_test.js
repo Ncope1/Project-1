@@ -12,14 +12,25 @@ function populate () {
        for(var i = 0; i< options.length; i++) {
            var span = document.getElementById("option" + i)
            span.innerHTML = options[i]
+           guess("btn" + i, options[i])
        }
 
     }
 }
 
+function guess (id, guess) {
+    var button = document.getElementById(id)
+    button.onclick = function () {
+        trivia.guess(guess)
+        populate()
+    }
+}
+
 function showScores () {
     var gameOverHtml = "<h1>Result</h1>"
-        gameOverHtml += ""
+    gameOverHtml += "<h2 id='score'> Your scores: " + trivia.score + "</h2>"
+    var element = document.getElementById("trivia")
+    element.innerHTML = gameOverHtml
 }
 
 
