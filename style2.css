@@ -1,5 +1,5 @@
 body{
-    background-color: lemonchiffon;
+    background-color: rgb(150, 202, 67);
 }
 
 .grid{
@@ -10,7 +10,7 @@ body{
     margin: 0 auto;
     height: 500px;
     border: 2px solid lemonchiffon;
-    box-shadow: 10px 15px 5px lime;
+    box-shadow: 10px 15px 5px lemonchiffon;
 }
 
 .grid h1 {
@@ -46,6 +46,12 @@ border-radius: 50px;
 margin: 10px 40px 10px 0;
 padding: 10px 10px;
 
+}
+
+#score {
+    color: lemonchiffon;
+    font-size:  30px;
+    text-align: center;
 }
 
 #progress {

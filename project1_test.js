@@ -14,7 +14,7 @@ function populate () {
            span.innerHTML = options[i]
            guess("btn" + i, options[i])
        }
-
+        showProgress()
     }
 }
 
@@ -26,8 +26,14 @@ function guess (id, guess) {
     }
 }
 
+//function showProgress () {
+   // var currentQuestionNumber = trivia.getQuestionIndex + 1
+    //var element = document.getElementById("progress")
+    //element.innerHTML = "Question " + currentQuestionNumber + "of " + trivia.questions.length
+//}
+
 function showScores () {
-    var gameOverHtml = "<h1>Result</h1>"
+    var gameOverHtml = "<h1>Game Over!</h1>"
     gameOverHtml += "<h2 id='score'> Your scores: " + trivia.score + "</h2>"
     var element = document.getElementById("trivia")
     element.innerHTML = gameOverHtml
