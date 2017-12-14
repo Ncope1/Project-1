@@ -6,7 +6,7 @@ Please see below for a screen shot of the rendered trivia image.
 
 https://raw.githubusercontent.com/Ncope1/Project-1/master/Screen%20Shot%202017-12-13%20at%209.35.02%20PM.png
 
-## List of Features / User Stories
+## List of Features
 * One question and a set of answer options are displayed one at a time when the page renders
 
 * Trivia progresses to the next page when an answer option is selected
