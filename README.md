@@ -1,56 +1,43 @@
 # Queen Bey Trivia!
-The objective of this project is to create a trivia game. I chose to base my trivia on Pop Artist, Beyoncé and her personal/professional life.
+The objective of this project was to create a trivia game. I created a six (6) question trivia based on Pop Artist, Beyoncé and her personal/professional life.
 
-## Instructions
-Once the page loads, the initial question and a set of answer options are displayed. Once the user clicks on an answer option - regardless of if it's correct or not - the next question is displayed followed by the next and so on, until the end of the game.
-
-
-### Example
-
-What things you need to install the software and how to install them
+### Brief Example
 
 ```
-![alt text](Project-1/Screen\ Shot\ 2017-12-13\ at\ 9.35.02\ PM.png "Queen Bey Screen Shot")
+EXAMPLE
 ```
 
-## Running the tests
+## List of Features / User Stories
+* One question and a set of answer options are displayed one at a time when the page renders
 
-Explain how to run the automated tests for this system
+* Trivia progresses to the next page when an answer option is selected
 
-### Break down into end to end tests
+* Once all questions have been answered, “Game Over” is displayed on the final page along with the user’s score
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
+### List of Technologies Used
 * HTML
+
 * CSS
+
 * Vanilla JavaScript
 
+## Installation Instructions
+Users are able to access this trivia via their web browser by clicking this link https://github.com/Ncope1/Project-1.
+
+## Contribution Guidelines
+I welcome any advice that will enhance my app and make my coding cleaner. Feel free to contribute via this link https://github.com/Ncope1/Project-1.
 
 ## Authors
 
-* **Natalee Cope** - *Project-1* - [Queen Bey Trivia](https://github.com/Ncope1/Project-1)
+* **Natalee Cope** - Queen Bey Trivia - December 2017
 
 ## Acknowledgments
 
-* Thanks to all of my WDI-20 peers for your guidance in helping me to figure out my errors
-* 
+I received guidance from online resources as well as my peers. Please see below for linked resources.
+* https://stackoverflow.com
+* https://www.freecodecamp.org
+* https://developer.mozilla.org
+* https://www.airpair.com/
+* https://medium.com
 
- -->
+Thanks to all of my WDI-20 peers for your guidance in helping me to figure out my errors.
