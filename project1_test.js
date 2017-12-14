@@ -1,9 +1,10 @@
+//displys the question on the page
 function displayOnPage () {
     if (trivia.hasEnded()) {
         showScores ()
     }
     else {
-        //display question
+        //display question based on the html "question" tag
         var element = document.getElementById("question")
        element.innerHTML = trivia.getQuestionIndex().text
 
@@ -33,7 +34,7 @@ function showScores () {
     var element = document.getElementById("trivia")       
     element.innerHTML = gameOverHtml
 }
-//stored an array in a variable to list questions with answer options along with correct answer
+//constructor functions created on questions.js and trivia_controller.js are being used inside this array
 var questions = [
     new Question("What is Beyoncé's middle name?", ["Erica", "Sasha", "Giselle", "Gabrielle"], "Giselle"),
     new Question("What is Beyoncé's favorite color?", ["Blue", "Green", "Yellow", "Red"], "Blue"),
@@ -45,6 +46,6 @@ var questions = [
 //Storing a variable into array: https://stackoverflow.com/questions/18546038/store-javascript-variable-into-array
 //Storing multiple values: https://www.freecodecamp.org/challenges/store-multiple-values-in-one-variable-using-javascript-arrays
 
-var trivia = new Trivia (questions)
+var trivia = new Trivia (questions) //object for the trivia controller
 
 displayOnPage()

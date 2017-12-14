@@ -1,11 +1,13 @@
-//this is the game functionality - keeping track of the score, current question and if the game has ended 
-function Trivia (questions) {
+//this is the game functionality - keeping track of the score and the number of questions the trivia contains. also contains the current question and if the game has ended 
+function Trivia (questions) //constructor function
+{
     this.score = 0
     this.questions = questions
     this.questionIndex = 0
 }
 
-Trivia.prototype.getQuestionIndex = function () {
+Trivia.prototype.getQuestionIndex = function () //gets index of current question
+{
     return this.questions[this.questionIndex]
 }
 
@@ -13,10 +15,10 @@ Trivia.prototype.hasEnded = function () {
     return this.questions.length === this.questionIndex
 }
 
-Trivia.prototype.guess = function (answer) {
-
+Trivia.prototype.guess = function (answer) //checks if the current answer is equal to the answer selected by the user
+{
     if (this.getQuestionIndex().correctAnswer(answer)) {
-        this.score++
+        this.score++ //increase score within the condition
 
     }
     this.questionIndex++
