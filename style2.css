@@ -54,12 +54,6 @@ padding: 10px 10px;
     text-align: center;
 }
 
-#progress {
-    color: lemonchiffon;
-    font-size: 18px;
-}
-
-
 #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
 cursor: pointer;
 background-color: greenyellow;
