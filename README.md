@@ -10,7 +10,7 @@ Once the page loads, the initial question and a set of answer options are displa
 What things you need to install the software and how to install them
 
 ```
-![alt text](Project-1/Screen Shot 2017-12-13 at 9.35.02 PM.png "Queen Bey Screen Shot")
+![alt text](Project-1/Screen\ Shot\ 2017-12-13\ at\ 9.35.02\ PM.png "Queen Bey Screen Shot")
 ```
 
 ## Running the tests
