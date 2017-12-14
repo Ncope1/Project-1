@@ -14,11 +14,10 @@ function displayOnPage () {
            span.innerHTML = options[i]
            guess("btn" + i, options[i])
        }                            
-        //showProgress()
     }
 }
 
-//check users guess for correct answer and moves to next question
+//check user's guess for correct answer and moves to next question
 function guess (id, guess) {
     var button = document.getElementById(id)
     button.onclick = function () {
@@ -27,20 +26,14 @@ function guess (id, guess) {
     }
 }
 
-/*function showProgress () {
-   var currentQuestionNumber = trivia.getQuestionIndex + 1
-    var element = document.getElementById("progress")
-    element.innerHTML = "Question " + currentQuestionNumber + "of " + trivia.questions.length
-}*/
-
 //created score board at end to also display score results out of 6
 function showScores () {
     var gameOverHtml = "<h1>Game Over!</h1>"
     gameOverHtml += "<h2 id='score'> Your score: " + trivia.score + "</h2>"
-    var element = document.getElementById("trivia")
+    var element = document.getElementById("trivia")       
     element.innerHTML = gameOverHtml
 }
-
+//stored an array in a variable to list questions with answer options along with correct answer
 var questions = [
     new Question("What is Beyoncé's middle name?", ["Erica", "Sasha", "Giselle", "Gabrielle"], "Giselle"),
     new Question("What is Beyoncé's favorite color?", ["Blue", "Green", "Yellow", "Red"], "Blue"),

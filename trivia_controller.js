@@ -1,3 +1,4 @@
+//this is the game functionality - keeping track of the score, current question and if the game has ended 
 function Trivia (questions) {
     this.score = 0
     this.questions = questions
