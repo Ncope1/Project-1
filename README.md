@@ -1,36 +1,17 @@
 # Queen Bey Trivia!
-
-The objective of this project was to create a trivia game based on Pop Artist, Beyoncé and her personal/professional life.
+The objective of this project is to create a trivia game based on Pop Artist, Beyoncé and her personal/professional life.
 
 ## Instructions
+Once the page loads, the initial question and a set of answer options are displayed. Once the user clicks on an answer option, the next question is displayed followed by the next and so on, until the end of the game.
 
 
-
-### Prerequisites
+### Example
 
 What things you need to install the software and how to install them
 
 ```
 Give examples
 ```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
@@ -69,7 +50,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Acknowledgments
 
-* HUGE shout out to all of my WDI-20 peers for your help in figuring out my errors
-* S/O to FTSProtocol
+* Thanks to all of my WDI-20 peers for your guidance in helping me to figure out my errors
+* 
 
  -->
