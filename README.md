@@ -37,4 +37,4 @@ I received guidance from online resources as well as my peers. Please see below 
 * [Air Pair](https://www.airpair.com/javascript/posts/how-does-javascript-prototype-work)
 * [A Medium Corporation](https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9)
 
-Thanks to all of my WDI-20 peers for your guidance in helping me to figure out my errors.
+Thanks to all of my WDI-20 instructors and peers for your guidance in helping me to figure out my errors.
