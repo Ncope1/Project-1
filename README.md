@@ -1,11 +1,9 @@
 # Queen Bey Trivia!
 The objective of this project was to create a trivia game. I created a six (6) question trivia based on Pop Artist, Beyoncé and her personal/professional life.
 
-## Brief Example
+## Brief Example of Rendered Trivia
 
-```
-EXAMPLE
-```
+https://raw.githubusercontent.com/Ncope1/Project-1/master/Screen%20Shot%202017-12-13%20at%209.35.02%20PM.png
 
 ## List of Features / User Stories
 * One question and a set of answer options are displayed one at a time when the page renders
