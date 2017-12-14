@@ -13,11 +13,12 @@ function displayOnPage () {
            var span = document.getElementById("option" + i)
            span.innerHTML = options[i]
            guess("btn" + i, options[i])
-       }                                    //HOW DID IT KNOW TO STOP COUNTING?????????
+       }                            
         //showProgress()
     }
 }
 
+//check users guess for correct answer and moves to next question
 function guess (id, guess) {
     var button = document.getElementById(id)
     button.onclick = function () {
@@ -32,6 +33,7 @@ function guess (id, guess) {
     element.innerHTML = "Question " + currentQuestionNumber + "of " + trivia.questions.length
 }*/
 
+//created score board at end to also display score results out of 6
 function showScores () {
     var gameOverHtml = "<h1>Game Over!</h1>"
     gameOverHtml += "<h2 id='score'> Your score: " + trivia.score + "</h2>"
@@ -48,7 +50,6 @@ var questions = [
     new Question("What group is Beyoncé associated with?", ["TLC", "SWV", "TOTAL", "Destiny's Child"], "Destiny's Child")
 ]
 //Storing a variable into array: https://stackoverflow.com/questions/18546038/store-javascript-variable-into-array
-
 //Storing multiple values: https://www.freecodecamp.org/challenges/store-multiple-values-in-one-variable-using-javascript-arrays
 
 var trivia = new Trivia (questions)

@@ -1,10 +1,10 @@
 # Queen Bey Trivia!
 
-This project is a trivia based on Pop Artist, Beyoncé and her personal/professional life.
+The objective of this project was to create a trivia game based on Pop Artist, Beyoncé and her personal/professional life.
 
-## Getting Started
+## Instructions
 
-<!-- These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
 
 ### Prerequisites
 

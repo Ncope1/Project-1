@@ -20,4 +20,6 @@ Trivia.prototype.guess = function (answer) {
     }
     this.questionIndex++
 }
+
 //Prototype Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
+//Prototype Resource: https://www.airpair.com/javascript/posts/how-does-javascript-prototype-work
