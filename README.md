@@ -1,8 +1,8 @@
 # Queen Bey Trivia!
-The objective of this project is to create a trivia game based on Pop Artist, Beyoncé and her personal/professional life.
+The objective of this project is to create a trivia game. I chose to base my trivia on Pop Artist, Beyoncé and her personal/professional life.
 
 ## Instructions
-Once the page loads, the initial question and a set of answer options are displayed. Once the user clicks on an answer option, the next question is displayed followed by the next and so on, until the end of the game.
+Once the page loads, the initial question and a set of answer options are displayed. Once the user clicks on an answer option - regardless of if it's correct or not - the next question is displayed followed by the next and so on, until the end of the game.
 
 
 ### Example
@@ -10,7 +10,7 @@ Once the page loads, the initial question and a set of answer options are displa
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Project-1/Screen Shot 2017-12-13 at 9.35.02 PM.png
 ```
 
 ## Running the tests
