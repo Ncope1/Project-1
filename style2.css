@@ -8,7 +8,7 @@ body{
     border-radius: 50px; 
     padding: 10px 50px;
     margin: 0 auto;
-    height: 500px;
+    height: 600px;
     border: 2px solid lemonchiffon;
     box-shadow: 10px 15px 5px lemonchiffon;
 }
@@ -56,7 +56,7 @@ padding: 10px 10px;
 
 .question-number {
     color: lemonchiffon;
-    text-align: center;
+    text-align: left;
 }
 
 .trivia-answers:hover {

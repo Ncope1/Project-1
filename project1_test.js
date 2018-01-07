@@ -80,11 +80,11 @@ function firstQuestion () {
                 if (this.classList[1] == 'a') {
                     game.score++
                     userScore()
-                    alert('Right answer!')
+                   // alert('Right answer!')
                     console.log(`game score is ${game.score}`)
                     thirdQuestion()
                 } else {
-                    alert('Wrong answer!')
+                   // alert('Wrong answer!')
                     thirdQuestion()
                 }
             })
@@ -106,11 +106,11 @@ for (var i = 0; i < 4; i++) {
             if (this.classList[1] == 'a') {
                 game.score++
                 userScore()
-                alert('Right answer!')
+                //alert('Right answer!')
                 console.log(`game score is ${game.score}`)
                 thirdQuestion()
             } else {
-                alert('Wrong answer!')
+                //alert('Wrong answer!')
                 thirdQuestion()
             }
         })
@@ -129,11 +129,11 @@ function thirdQuestion () {
                 if (this.classList[1] == 'c') {
                     // game.score++
                     userScore()
-                    alert('Right answer!')
+                   // alert('Right answer!')
                     console.log(`game score is ${game.score}`)
                     fourthQuestion()
                 } else {
-                    alert('Wrong answer!')
+                    //alert('Wrong answer!')
                     fourthQuestion()
                 }
         })
@@ -151,11 +151,11 @@ function fourthQuestion () {
         document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[3].round}/${allQuestions.length}`
         if (this.classList[1] == 'a') {
             userScore()
-            alert('Right answer!')
+            //alert('Right answer!')
             console.log(`game score is ${game.score}`)
             fifthQuestion()
         } else {
-            alert('Wrong answer!')
+           // alert('Wrong answer!')
             fifthQuestion()
         }
         })
@@ -173,11 +173,11 @@ function fifthQuestion () {
         document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[4].round}/${allQuestions.length}`
         if (this.classList[1] == 'c') {
             userScore()
-            alert('Right answer!')
+            //alert('Right answer!')
             console.log(`game score is ${game.score}`)
             sixthQuestion()
         } else {
-            alert('Wrong answer!')
+            //alert('Wrong answer!')
             sixthQuestion()
         }
         })
@@ -195,11 +195,11 @@ function sixthQuestion () {
         document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[5].round}/${allQuestions.length}`
         if (this.classList[1] == 'd') {
             userScore()
-            alert('Right answer!')
+            //alert('Right answer!')
             console.log(`game score is ${game.score}`)
             sixthQuestion()
         } else {
-            alert('Wrong answer!')
+            //alert('Wrong answer!')
             sixthQuestion()
         }
         })
