@@ -77,7 +77,7 @@ function firstQuestion () {
             let d = document.getElementsByClassName('trivia-answers')[3].innerHTML = allQuestions[0].answer4
             document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[0].round}/${allQuestions.length}`
             console.log(`I clicked on ${this.classList[1]}`)
-                if (this.classList[1] == 'a') {
+                if (this.classList[1] == 'c') {
                     game.score++
                     userScore()
                    // alert('Right answer!')
