@@ -88,8 +88,17 @@ function firstQuestion () {
                     secondQuestion()
                 }
             })
+            changeQuestion[i].removeEventListener('click', function() {
+                'click', function(callBack) {
+                    document.getElementsByClassName('trivia-question')[0].innerHTML = allQuestions[0].question
+                    let a = document.getElementsByClassName('trivia-answers')[0].innerHTML = allQuestions[0].answer1
+                    let b = document.getElementsByClassName('trivia-answers')[1].innerHTML = allQuestions[0].answer2
+                    let c = document.getElementsByClassName('trivia-answers')[2].innerHTML = allQuestions[0].answer3
+                    let d = document.getElementsByClassName('trivia-answers')[3].innerHTML = allQuestions[0].answer4
+            }
+            })
+          }
         }
-    }
 firstQuestion()
 
 //change answers to new answer after clicking on an answer
@@ -160,6 +169,7 @@ function fourthQuestion () {
         }
         })
     }
+    
 }
 
 function fifthQuestion () {
