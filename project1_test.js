@@ -82,10 +82,10 @@ function firstQuestion () {
                     userScore()
                    // alert('Right answer!')
                     console.log(`game score is ${game.score}`)
-                    thirdQuestion()
+                    secondQuestion()
                 } else {
                    // alert('Wrong answer!')
-                    thirdQuestion()
+                    secondQuestion()
                 }
             })
         }
@@ -197,7 +197,7 @@ function sixthQuestion () {
             userScore()
             //alert('Right answer!')
             console.log(`game score is ${game.score}`)
-            sixthQuestion()
+            secondQuestion()
         } else {
             //alert('Wrong answer!')
             sixthQuestion()
