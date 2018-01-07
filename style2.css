@@ -23,7 +23,7 @@ body{
     border-radius: 50px;
 }
 
-.grid #question {
+.grid .trivia-question {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 30px;
     color: lemonchiffon;
@@ -36,7 +36,7 @@ body{
 
 }
 
-#btn0, #btn1, #btn2, #btn3 {
+.trivia-answers {
 background-color: lemonchiffon;
 width: 250px;
 font-size: 20px;
@@ -48,17 +48,22 @@ padding: 10px 10px;
 
 }
 
-#score {
+.score {
     color: lemonchiffon;
     font-size:  30px;
     text-align: center;
 }
 
-#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+.question-number {
+    color: lemonchiffon;
+    text-align: center;
+}
+
+.trivia-answers:hover {
 cursor: pointer;
 background-color: greenyellow;
 }
 
-#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+.trivia-answers:focus {
 outline: 0;
 }

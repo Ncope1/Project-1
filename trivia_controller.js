@@ -1,3 +1,4 @@
+/*
 //this is the game functionality - keeping track of the score and the number of questions the trivia contains. also contains the current question and if the game has ended 
 function Trivia (questions) //constructor function
 {
@@ -26,3 +27,4 @@ Trivia.prototype.guess = function (answer) //checks if the current answer is equ
 
 //Prototype Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
 //Prototype Resource: https://www.airpair.com/javascript/posts/how-does-javascript-prototype-work
+*/
