@@ -1,19 +1,19 @@
-body{
+body {
     background-color: greenyellow;
-}
-
-.grid{
+  }
+  
+  .grid{
     background-color: deeppink;
     width: 600px;
     border-radius: 50px; 
     padding: 10px 50px;
     margin: 0 auto;
-    height: 600px;
+    height: 500px;
     border: 2px solid lemonchiffon;
     box-shadow: 10px 15px 5px lemonchiffon;
-}
-
-.grid h1 {
+  }
+  
+  .grid h1 {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     background-color: deeppink;
     font-size: 60px;
@@ -21,49 +21,44 @@ body{
     color: lemonchiffon;
     padding: 2px 0px;
     border-radius: 50px;
-}
-
-.grid .trivia-question {
+  }
+  
+  .grid #question {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 30px;
     color: lemonchiffon;
     text-align: center;
-
-}
-
-.buttons {
+  
+  }
+  
+  .buttons {
     margin-top: 30px;
-
-}
-
-.trivia-answers {
-background-color: lemonchiffon;
-width: 250px;
-font-size: 20px;
-color: deeppink;
-border: 1px solid lemonchiffon;
-border-radius: 50px;
-margin: 10px 40px 10px 0;
-padding: 10px 10px;
-
-}
-
-.score {
+  
+  }
+  
+  #btn0, #btn1, #btn2, #btn3 {
+  background-color: lemonchiffon;
+  width: 250px;
+  font-size: 20px;
+  color: deeppink;
+  border: 1px solid lemonchiffon;
+  border-radius: 50px;
+  margin: 10px 40px 10px 0;
+  padding: 10px 10px;
+  
+  }
+  
+  .score {
     color: lemonchiffon;
     font-size:  30px;
     text-align: center;
-}
-
-.question-number {
-    color: lemonchiffon;
-    text-align: left;
-}
-
-.trivia-answers:hover {
-cursor: pointer;
-background-color: greenyellow;
-}
-
-.trivia-answers:focus {
-outline: 0;
-}
+  }
+  
+  #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+  }
+  
+  #btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+  outline: 0;
+  }
