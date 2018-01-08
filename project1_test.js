@@ -55,13 +55,12 @@ var allQuestions = [
     }
 ]
 var triviaAnswers = document.getElementsByClassName('trivia-answers')
-function removeEL() {
-    for (var i = 0; triviaAnswers.length; i++) {
-        triviaAnswers[i].removeEventListener('click', function() {
-            console.log('event listener removed')
-        })
-    }
-}
+// function removeEL() {
+//     for (var i = 0; triviaAnswers.length; i++) {
+//         triviaAnswers[i].removeEventListener('click', function() {
+//             console.log('event listener removed')
+//         })
+// 
 
 //grabs all trivia-answers dom elements so that they can be clicked
 let changeQuestion = document.getElementsByClassName('trivia-answers')
@@ -73,6 +72,24 @@ let changeQuestion = document.getElementsByClassName('trivia-answers')
 // document.getElementsByClassName('trivia-answers')[2].innerHTML = 'click'
 // document.getElementsByClassName('trivia-answers')[3].innerHTML = 'any button'
 document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[0].round}/${allQuestions.length}`
+
+function handleFirstQuestionClick() {
+    document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[0].round}/${allQuestions.length}`
+    console.log(`I clicked on ${this.classList[1]}`)
+        if (this.classList[1] == 'c') {
+            game.score++
+            userScore()
+           // alert('Right answer!')
+            console.log(`game score is ${game.score}`)
+            secondQuestion()
+        } else {
+           // alert('Wrong answer!')
+            secondQuestion()
+        }
+        for (var i = 0; i < 4; i++) {
+            changeQuestion[i].removeEventListener('click', handleFirstQuestionClick)
+        }
+    }
 
 function firstQuestion () {
     document.getElementsByClassName('trivia-question')[0].innerHTML = allQuestions[0].question
@@ -87,27 +104,36 @@ function firstQuestion () {
             let d = document.getElementsByClassName('trivia-answers')[3]
             d.innerHTML = allQuestions[0].answer4
     for (var i = 0; i < 4; i++) {
-        changeQuestion[i].addEventListener('click', function() {
-            
-            document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[0].round}/${allQuestions.length}`
-            console.log(`I clicked on ${this.classList[1]}`)
-                if (this.classList[1] == 'c') {
-                    game.score++
-                    userScore()
-                   // alert('Right answer!')
-                    console.log(`game score is ${game.score}`)
-                    secondQuestion()
-                } else {
-                   // alert('Wrong answer!')
-                    secondQuestion()
-                }
-            })
-          }
-    removeEL()
+        changeQuestion[i].addEventListener('click', handleFirstQuestionClick)
+    }
 }
-firstQuestion()
+// firstQuestion()
+
+
+
+
 
 //change answers to new answer after clicking on an answer
+
+function handleSecondQuestionClick() {
+
+document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[1].round}/${allQuestions.length}`
+console.log(`I clicked on ${this.classList[1]}`)
+    if (this.classList[1] == 'a') {
+        game.score++
+        userScore()
+        //alert('Right answer!')
+        console.log(`game score is ${game.score}`)
+        thirdQuestion()
+    } else {
+        //alert('Wrong answer!')
+        thirdQuestion()
+    }
+    for (var i = 0; i < 4; i++) {
+        changeQuestion[i].removeEventListener('click', handleSecondQuestionClick)
+    }
+}
+
 function secondQuestion () {
         document.getElementsByClassName('trivia-question')[0].innerHTML = allQuestions[1].question
         let a = document.getElementsByClassName('trivia-answers')[0]
@@ -119,24 +145,31 @@ function secondQuestion () {
         let d = document.getElementsByClassName('trivia-answers')[3]
         d.innerHTML = allQuestions[1].answer4
 for (var i = 0; i < 4; i++) {
-    changeQuestion[i].addEventListener('click', function(callBack) {
-        document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[1].round}/${allQuestions.length}`
-        console.log(`I clicked on ${this.classList[1]}`)
-            if (this.classList[1] == 'a') {
-                game.score++
-                userScore()
-                //alert('Right answer!')
-                console.log(`game score is ${game.score}`)
-                thirdQuestion()
-            } else {
-                //alert('Wrong answer!')
-                thirdQuestion()
-            }
-        })
-    }
-    removeEL()
+        changeQuestion[i].addEventListener('click', handleSecondQuestionClick)
+    } 
 }
+secondQuestion()
 
+
+
+
+
+
+function handleThirdQuestionClick() {
+document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[2].round}/${allQuestions.length}`
+if (this.classList[1] == 'c') {
+    // game.score++
+    userScore()
+   // alert('Right answer!')
+    console.log(`game score is ${game.score}`)
+    fourthQuestion()
+} else {
+    //alert('Wrong answer!')
+    fourthQuestion()
+}
+for (var i = 0; i < 4; i++) {
+    changeQuestion[i].removeEventListener('click', handleThirdQuestionClick)
+}
 function thirdQuestion () {
     document.getElementsByClassName('trivia-question')[0].innerHTML = allQuestions[2].question
     let a = document.getElementsByClassName('trivia-answers')[0]
@@ -148,22 +181,28 @@ function thirdQuestion () {
     let d = document.getElementsByClassName('trivia-answers')[3]
     d.innerHTML = allQuestions[2].answer4
     for (var i = 0; i < 4; i++) {
-        changeQuestion[i].addEventListener('click', function(callback) {
-        document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[2].round}/${allQuestions.length}`
-                if (this.classList[1] == 'c') {
-                    // game.score++
-                    userScore()
-                   // alert('Right answer!')
-                    console.log(`game score is ${game.score}`)
-                    fourthQuestion()
-                } else {
-                    //alert('Wrong answer!')
-                    fourthQuestion()
-                }
-        })
+        changeQuestion[i].addEventListener('click', handleThirdQuestionClick) }
+        }
     }
-    removeEL()
-}
+thirdQuestion()
+
+
+
+
+function handleFourthQuestionClick() {
+    document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[3].round}/${allQuestions.length}`
+    if (this.classList[1] == 'a') {
+        userScore()
+        //alert('Right answer!')
+        console.log(`game score is ${game.score}`)
+        fifthQuestion()
+    } else {
+       // alert('Wrong answer!')
+        fifthQuestion()
+    }
+    for (var i = 0; i < 4; i++) {
+        changeQuestion[i].removeEventListener('click', handleFourthQuestionClick)
+    }
 
 function fourthQuestion () {
     document.getElementsByClassName('trivia-question')[0].innerHTML = allQuestions[3].question
@@ -175,22 +214,28 @@ function fourthQuestion () {
     c.innerHTML = allQuestions[3].answer3
     let d = document.getElementsByClassName('trivia-answers')[3].innerHTML = allQuestions[3].answer4
     for (var i = 0; i < 4; i++) {
-        changeQuestion[i].addEventListener('click', function(callback) {
-        document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[3].round}/${allQuestions.length}`
-        if (this.classList[1] == 'a') {
+        changeQuestion[i].addEventListener('click', handleFourthQuestionClick) }
+        }
+    }
+
+fourthQuestion()
+
+
+function handleFifthQuestionClick() {
+document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[4].round}/${allQuestions.length}`
+        if (this.classList[1] == 'c') {
             userScore()
             //alert('Right answer!')
             console.log(`game score is ${game.score}`)
-            fifthQuestion()
+            sixthQuestion()
         } else {
-           // alert('Wrong answer!')
-            fifthQuestion()
+            //alert('Wrong answer!')
+            sixthQuestion()
         }
-        })
-    }
-    removeEL()
-}
-
+        for (var i = 0; i < 4; i++) {
+            changeQuestion[i].removeEventListener('click', handleFifthQuestionClick)
+        }
+    
 function fifthQuestion () {
     document.getElementsByClassName('trivia-question')[0].innerHTML = allQuestions[4].question
     let a = document.getElementsByClassName('trivia-answers')[0]
@@ -202,22 +247,26 @@ function fifthQuestion () {
     let d = document.getElementsByClassName('trivia-answers')[3]
     d.innerHTML = allQuestions[4].answer4
     for (var i = 0; i < 4; i++) {
-        changeQuestion[i].addEventListener('click', function() {
-        document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[4].round}/${allQuestions.length}`
-        if (this.classList[1] == 'c') {
+        changeQuestion[i].addEventListener('click', handleFifthQuestionClick)
+     }
+  }
+}
+fifthQuestion()
+
+function handleSixthQuestionClick() {
+document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[5].round}/${allQuestions.length}`
+        if (this.classList[1] == 'd') {
             userScore()
             //alert('Right answer!')
             console.log(`game score is ${game.score}`)
-            sixthQuestion()
+            showScores()
         } else {
             //alert('Wrong answer!')
-            sixthQuestion()
+            showScores()
         }
-        })
-    }
-    removeEL()
-}
-
+        for (var i = 0; i < 4; i++) {
+            changeQuestion[i].removeEventListener('click', handleSixthQuestionClick)
+        }
 function sixthQuestion () {
     document.getElementsByClassName('trivia-question')[0].innerHTML = allQuestions[5].question
     let a = document.getElementsByClassName('trivia-answers')[0]
@@ -229,25 +278,17 @@ function sixthQuestion () {
     let d = document.getElementsByClassName('trivia-answers')[3]
     d.innerHTML = allQuestions[5].answer4
     for (var i = 0; i < 4; i++) {
-        changeQuestion[i].addEventListener('click', function() {
-        document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[5].round}/${allQuestions.length}`
-        if (this.classList[1] == 'd') {
-            userScore()
-            //alert('Right answer!')
-            console.log(`game score is ${game.score}`)
-            showScores()
-        } else {
-            //alert('Wrong answer!')
-            showScores()
-        }
-        })
+        changeQuestion[i].addEventListener('click', handleSixthQuestionClick)
+     }
     }
-    removeEL()
 }
+
 function showScores () {
     var gameOverHtml = "<h1>Game Over!</h1>"
     gameOverHtml += "<h2 id='score'> Your score: " + trivia.score + "</h2>"
 }
+
+
 // })() //end of top function
 
 
