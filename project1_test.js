@@ -54,6 +54,14 @@ var allQuestions = [
         round: 6
     }
 ]
+var triviaAnswers = document.getElementsByClassName('trivia-answers')
+function removeEL() {
+    for (var i = 0; triviaAnswers.length; i++) {
+        triviaAnswers[i].removeEventListener('click', function() {
+            console.log('event listener removed')
+        })
+    }
+}
 
 //grabs all trivia-answers dom elements so that they can be clicked
 let changeQuestion = document.getElementsByClassName('trivia-answers')
@@ -79,7 +87,7 @@ function firstQuestion () {
             let d = document.getElementsByClassName('trivia-answers')[3]
             d.innerHTML = allQuestions[0].answer4
     for (var i = 0; i < 4; i++) {
-        changeQuestion[i].addEventListener('click', function(callBack) {
+        changeQuestion[i].addEventListener('click', function() {
             
             document.getElementsByClassName('question-number')[0].textContent = `${allQuestions[0].round}/${allQuestions.length}`
             console.log(`I clicked on ${this.classList[1]}`)
@@ -94,18 +102,9 @@ function firstQuestion () {
                     secondQuestion()
                 }
             })
-            // changeQuestion[i].removeEventListener('click', function() {
-            //     'click', function(callBack) {
-            //         document.getElementsByClassName('trivia-question')[0].innerHTML = allQuestions[0].question
-            //         let a = document.getElementsByClassName('trivia-answers')[0].innerHTML = allQuestions[0].answer1
-            //         let b = document.getElementsByClassName('trivia-answers')[1].innerHTML = allQuestions[0].answer2
-            //         let c = document.getElementsByClassName('trivia-answers')[2].innerHTML = allQuestions[0].answer3
-            //         let d = document.getElementsByClassName('trivia-answers')[3].innerHTML = allQuestions[0].answer4
-            //         console.log('score test')
-            // }
-            // })
           }
-        }
+    removeEL()
+}
 firstQuestion()
 
 //change answers to new answer after clicking on an answer
@@ -135,6 +134,7 @@ for (var i = 0; i < 4; i++) {
             }
         })
     }
+    removeEL()
 }
 
 function thirdQuestion () {
@@ -162,6 +162,7 @@ function thirdQuestion () {
                 }
         })
     }
+    removeEL()
 }
 
 function fourthQuestion () {
@@ -187,7 +188,7 @@ function fourthQuestion () {
         }
         })
     }
-    
+    removeEL()
 }
 
 function fifthQuestion () {
@@ -214,6 +215,7 @@ function fifthQuestion () {
         }
         })
     }
+    removeEL()
 }
 
 function sixthQuestion () {
@@ -240,6 +242,7 @@ function sixthQuestion () {
         }
         })
     }
+    removeEL()
 }
 function showScores () {
     var gameOverHtml = "<h1>Game Over!</h1>"
