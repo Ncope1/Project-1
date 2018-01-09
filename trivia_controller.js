@@ -1,4 +1,6 @@
 //this is the game functionality - keeping track of the score and the number of questions the trivia contains. also contains the current question and if the game has ended 
+
+//this is the game functionality - keeping track of the score and the number of questions the trivia contains. also contains the current question and if the game has ended 
 class Trivia {
     constructor(questions) {//constructor function
     this.score = 0
@@ -23,6 +25,7 @@ class Trivia {
     this.hasEnded = function () {
         return this.questions.length === this.questionIndex
     }
+    
 }
 }
 
@@ -45,9 +48,4 @@ class Trivia {
 //     this.questionIndex++
 // }
 
-//Prototype Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
-//Prototype Resource: https://www.airpair.com/javascript/posts/how-does-javascript-prototype-work
 
-/*//Prototype Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
-//Prototype Resource: https://www.airpair.com/javascript/posts/how-does-javascript-prototype-work
-*/

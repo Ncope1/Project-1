@@ -53,6 +53,13 @@ body {
     font-size:  30px;
     text-align: center;
   }
+
+  .game-score {
+    color: lemonchiffon;
+    font-size:  30px;
+    text-align: center;
+    margin: 0 auto;
+  }
   
   #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
   cursor: pointer;
