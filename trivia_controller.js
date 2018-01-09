@@ -23,7 +23,6 @@ class Trivia {
     this.hasEnded = function () {
         return this.questions.length === this.questionIndex
     }
-    
 }
 }
 
