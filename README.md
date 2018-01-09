@@ -33,8 +33,6 @@ I welcome any advice that will enhance my app and make my coding cleaner. Feel f
 I received guidance from online resources as well as my peers. Please see below for linked resources.
 * [Stack Overflow](https://stackoverflow.com/questions/18546038/store-javascript-variable-into-array)
 * [Free Code Camp](https://www.freecodecamp.org/challenges/store-multiple-values-in-one-variable-using-javascript-arrays)
-* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
-* [Air Pair](https://www.airpair.com/javascript/posts/how-does-javascript-prototype-work)
-* [A Medium Corporation](https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9)
+
 
 Thanks to all of my WDI-20 instructors and peers for your guidance in helping me to figure out my errors.
