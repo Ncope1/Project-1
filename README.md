@@ -19,6 +19,13 @@ Please click this [link](project1_screenshot.png) for a screen shot of the rende
 ## Installation Instructions
 Users are able to access this trivia via their web browser by clicking this [link](https://ncope1.github.io/Project-1/)
 
+## Future Improvements
+In order to improve this project, my plan is to:
+* Rewrite my code so that it is much more DRY
+* Include images/GIFs of Beyoncé
+
+
+
 ## Contribution Guidelines
 I welcome any advice that will enhance my app and make my coding cleaner. Feel free to contribute via this [link](https://github.com/Ncope1/Project-1).
 

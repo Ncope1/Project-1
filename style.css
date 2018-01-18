@@ -32,7 +32,7 @@ h1 {
   color: deeppink;
   border: 1px solid lemonchiffon;
   border-radius: 50px;
-  margin: 10px 40px 90px 0;
+  margin: 10px 40px 50px 0;
   padding: 10px 10px;
 
   }
@@ -58,7 +58,7 @@ h1 {
   background-color: greenyellow;
   }
   
-  
+
   .btn:focus {
   outline: 0;
   }
