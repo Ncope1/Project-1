@@ -1,31 +1,28 @@
+/* AS: Be consistent on formatting here! Looks good though! */
 body {
-    background-color: deeppink;
-  }
+  background-color: deeppink;
+}
 
-  
 h1 {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background-color: deeppink;
-    font-size: 60px;
-    text-align: center;
-    color: greenyellow;
-    padding: 2px 0px;
-    border-radius: 50px;
-  }  
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: deeppink;
+  font-size: 60px;
+  text-align: center;
+  color: greenyellow;
+  padding: 2px 0px;
+  border-radius: 50px;
+}
 
+p {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: lemonchiffon;
+}
 
- p {
-   font-family: "Trebuchet MS", Helvetica, sans-serif;
-   color: lemonchiffon;
- }
+.buttons {
+  margin-top: 30px;
+}
 
-  
-  .buttons {
-    margin-top: 30px;
-  
-  }
-  
-.btn  {
+.btn {
   background-color: lemonchiffon;
   width: 250px;
   font-size: 20px;
@@ -34,31 +31,26 @@ h1 {
   border-radius: 50px;
   margin: 10px 40px 50px 0;
   padding: 10px 10px;
+}
 
-  }
-  
+.score {
+  color: greenyellow;
+  font-size: 40px;
+  text-align: center;
+}
 
-  .score {
-    color: greenyellow;
-    font-size:  40px;
-    text-align: center;
-  }
+.game-score {
+  color: greenyellow;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
 
-
-  .game-score {
-    color: greenyellow;
-    font-size:  30px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  
-
- .btn:hover {
+.btn:hover {
   cursor: pointer;
   background-color: greenyellow;
-  }
-  
+}
 
-  .btn:focus {
+.btn:focus {
   outline: 0;
-  }
+}
